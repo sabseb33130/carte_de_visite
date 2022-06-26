@@ -1,0 +1,185 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+@font-face {
+    font-family: '';
+    src: url('RymanEco-Regular.otf') format(otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'';
+    src:  url('DroidSans-Webfont.eot') format(eot);
+    font-weight: normal;
+    font-style: normal;
+font-size:x-large ;
+
+}
+body{
+    font-style: italic;
+ font-family: 'Ryman Eco', 'DroidSans-Webfont';
+ background-color: #f6efe9;
+}
+
+h1{
+    text-align: center;
+}
+header{
+    float: inline-start;
+  
+
+}
+#Format{
+    z-index: 1;
+  position: absolute;
+  width: 450px;
+  height: 400px;
+ top: 5px;
+  left: 850px;
+    background-color: #001d24;
+  border-radius: 50%;
+  border-color: black;
+  color: #d2d7d3;
+}
+#Format:hover{
+  color: #2c75ff;
+}
+  
+#dive{
+     text-align: center;
+     left:200px;
+     top: 280px;
+    width: 450px;
+    height: 400px;
+     background-color: #090979;
+     opacity: 0.7;
+     z-index: 2;
+     position:relative;
+     border-radius: 50%;
+     color: #d2d7d3;
+    }
+#dive:hover{
+  color: #2c75ff;
+ 
+ 
+}
+#exper{
+    text-align: center;
+    left: 150px;
+    top: 300px;
+    width: 450px;
+    height: 400px;
+    background-color: #bf55ec;
+    opacity: 0.5;
+    z-index: 3;
+    position: relative;
+    border-radius: 50%;
+    text-decoration-color: black;
+    color: #d2d7d3;
+}
+#exper:hover{
+    color: #2c75ff;
+
+ 
+}
+#realisation{
+    text-align: center;
+    left: 10px;
+    top: -400px;
+    width: 450px;
+    height: 400px;
+    background-color:  #3fc380;
+    opacity: 0.5;
+    z-index: 4;
+    position: relative;
+    border-radius: 50%;
+    color: #d2d7d3;
+}
+#realisation:hover{
+    color: #2c75ff;
+
+
+}
+.modal-content{
+    background-color: #cdd1e4;
+    height: 400px;
+    width: 700px;
+}
+#moi{
+   
+   left: 200px;
+  }
+.btn-close{
+    float: inline-end;
+}
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1024px */
+@media all and (max-width: 1024px)
+{
+    #exper 
+    {
+      position: relative;
+        height: 150px;
+        width: 100%;
+        text-align: center;
+        border-radius: 0%;
+        left: auto;
+        top: auto;
+        margin: 2px 0;
+        z-index: 1;
+    }
+    #dive 
+    {
+        position: relative;
+        height: 150px;
+        width: 100%;
+        text-align: center;
+        border-radius: 0%;
+        left: auto;
+        top: auto;
+      margin: 2px 0;
+        z-index: 2;
+    }
+    #Format 
+    {
+        height: 150px;
+        width: 100%;
+        text-align: center;
+        border-radius: 0%;
+       position: relative;
+       left: auto;
+       top: auto;
+       margin: 2px 0;        
+    }
+
+
+    #realisation
+    {
+        position: relative;
+        height: 150px;
+        width: 100%;
+        text-align: center;
+        border-radius: 0%;
+        left: auto;
+        top: auto;
+        margin: 2px 0;
+        
+    }
+    
+   
+
+   .modal-content
+    {
+        height: min-content;
+        width: 350px;
+    }
+    #offcanvas{
+               width: 400px;
+               height: 300px;
+    }
+    #moi{
+        width: 100%;
+        margin: 2px 0;
+    }
+    header{
+        float: none;
+    }
+}
