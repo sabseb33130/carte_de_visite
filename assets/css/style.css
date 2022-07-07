@@ -18,16 +18,55 @@ body{
     font-style: italic;
  font-family: 'Ryman Eco', 'DroidSans-Webfont';
  background-color: #f6efe9;
+ cursor: pointer;
 }
 
 h1{
     text-align: center;
 }
 header{
-    float: inline-start;
-  
-
+    float:left;
 }
+#offcanvas{
+    width: 100%;
+    height:200px;
+    position: absolute; 
+}
+.grid-container {
+    display: grid;
+    padding-top: 2.5rem;
+    grid-template-areas: 
+    'i1 i2 ta'
+    'tb bt bx';
+   
+}
+#tel{
+   grid-area:i1;
+   padding: 10px;
+}
+#mail{
+    grid-area: i2;
+    padding: 10px;
+}
+.text{
+  grid-area: ta;
+  padding: 10px;
+}
+#reseaux{
+   grid-area:tb;
+   padding: 10px;
+}
+#age{
+  grid-area:bt;
+  padding: 10px;
+}
+#loisir{
+    grid-area: bx;
+    padding: 10px;
+}
+
+
+
 #Format{
     z-index: 1;
   position: absolute;
@@ -104,15 +143,9 @@ header{
     height: 400px;
     width: 700px;
 }
-#moi{
-   
-   left: 200px;
-  }
-.btn-close{
-    float: inline-end;
-}
+
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1024px */
-@media all and (max-width: 1024px)
+@media all and (max-width: 800px)
 {
     #exper 
     {
@@ -173,7 +206,8 @@ header{
     }
     #offcanvas{
                width: 400px;
-               height: 300px;
+               height: 400px;
+   
     }
     #moi{
         width: 100%;
@@ -182,4 +216,44 @@ header{
     header{
         float: none;
     }
+
+    .grid-container {
+        display: grid;
+       margin: 0;
+        grid-template-areas: 
+        'i1'
+        'i2'
+        'ta'
+        'tb'
+        'bt'
+        'bx';
+       
+    }
+    #tel{
+       grid-area:i1;
+       
+    }
+    #mail{
+        grid-area: i2;
+        
+    }
+    .text{
+      grid-area: ta;
+    
+    }
+    #reseaux{
+       grid-area: tb;
+      
+    }
+    #age{
+      grid-area: bt;
+    
+    }
+    #loisir{
+        grid-area: bx;
+      
+    }
+    
+    
+
 }
