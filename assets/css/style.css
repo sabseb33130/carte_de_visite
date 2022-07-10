@@ -145,7 +145,7 @@ header{
 }
 
 /* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1024px */
-@media all and (max-width: 800px)
+@media all and (max-width: 1320px)
 {
     #exper 
     {
